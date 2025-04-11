@@ -11,8 +11,9 @@
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    margin: 0px 0px 10px;
+    
 }
+
 .box2 {
     height: 500px;
     background-color: black;
@@ -36,17 +37,17 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+/* .slide {
     width: 100%;
     flex-shrink: 0;
     height: 500px;
-}
-
-img {
+} */
+/* 
+.carousel img {
     width: 100%;
     height: 500px;
     display: block;
-}
+} */
 
 .box2 button {
     position: absolute;
@@ -94,18 +95,25 @@ img {
 
 .head1 {
     text-align: center;
-    padding: 30px 0px ;
+    padding: 30px 0px;
 }
-
+.head1{
+    text-decoration: underline;
+}
 .box4 {
     color: black;
     padding: 20px 0px;
 
 }
-
+.box4 img{
+    margin-left: 10px;
+}
 .box4 p {
     font-weight: bold;
-    padding-left: 25px;
+    padding-left: 40px;
+}
+.box4circle{
+    text-align: center;
 }
 
 .column {
@@ -173,8 +181,10 @@ ol {
 
 .box5 button {
     width: 100%;
-    background-color: rgb(24, 14, 82);
+    background-color: rgb(35 56 89);
     color: white;
+    border-radius: 4px;
+    height: 40px;
 }
 
 .box5 img {
@@ -182,14 +192,19 @@ ol {
 }
 
 #div6 {
-    background-color: rgb(228, 228, 92);
-    padding: 10px 0px 10px 50px;
+    background-color: rgb(240 226 70);
+    padding: 10px 50px ;
+    height: 100px;
+    text-align: right;
+    
 }
 
 #div61 {
-    background-color: rgb(41, 41, 134);
-    padding: 0px 0px 0px 120px;
+    background-color: rgb(35 56 89);
+    padding: 20px 0px 0px 120px;
     color: white;
+    height: 100px;
+    text-align: left;
 }
 
 #div61 h5 {
@@ -203,14 +218,16 @@ ol {
 }
 
 .box6 {
-    padding: 0px 0px 50px 0px ;
+    padding: 0px 0px 50px 0px;
+    
 }
 
 .box6 button {
     width: 50%;
     color: blue;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
+    
 }
 
 .box7 {
@@ -218,9 +235,10 @@ ol {
 }
 
 .box8 {
-    background-color: yellow;
-    padding: 10px;
-    
+    background-color: #f0e246;
+    padding: 30px;
+    height: 165px;
+
 }
 
 .box8 img {
@@ -234,30 +252,48 @@ ol {
 .box8 h5 {
     margin-left: 40px;
     font-size: 30px;
-    color: darkblue;
+    color: #1c304e;
 }
 
+.box9 i{
+    margin: 0px 0px 0px 8px ;
+}
+
+.box9{
+    margin: 40px 0px ;
+}
 .box9 h5 {
     font-size: 20px;
     color: darkblue;
 }
-
+.box10heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 60px 0px 50px 0px ;
+    color: #1c304e;
+}
 .box10 img {
     width: 100%;
     opacity: 0.2;
 }
-
+.box10 textarea{
+    margin: 14px 0px ;
+}
 #boxblue {
-    background-color: darkblue;
+    background-color: #233859;
     color: white;
     height: 50px;
     padding: 10px;
 }
 
 .box10 button {
-    background-color: darkblue;
+    background-color: #233859;
     color: white;
+    font-weight: bold;
+    border-radius: 5px;
     width: 30%;
+    margin: 15px 0px ;
     height: 40px;
 }
 
@@ -271,11 +307,11 @@ ol {
 }
 
 .box12 {
-    background-color: rgb(41, 41, 134);
+    background-color: rgb(35 56 89);
     height: 345px;
     color: white;
     padding: 50px;
-    margin: 5px 0px 0px 0px ;
+    margin: 30px 0px 0px 0px;
 }
 
 .box12 img {
@@ -303,7 +339,7 @@ ol {
 }
 
 .copyright {
-    background: darkblue;
+    background: #1c304e;
     padding: 10px 0;
     color: #fff;
 }
@@ -325,9 +361,17 @@ ol {
     list-style-type: none;
 }
 
-.link {
+
+.link2{
     list-style: none;
-   
+
+    padding: 0;
+    margin: 0;
+}
+
+.link{
+    list-style: none;
+
     padding: 0;
     margin: 0;
 }
@@ -349,25 +393,163 @@ ol {
     height: 2px;
     background-color: #007BFF;
     transition: width 0.3s ease;
-   
+
 }
 
 .link li:hover {
     color: greenyellow;
-   
+
 }
 
 .link li:hover::after {
     width: 55%;
-  
+
 }
 
-.form2bt  {
+.form2bt {
     margin: 15px 0px;
     height: 35px;
     border-radius: 8px;
 }
-.form-control{
-    
-    margin: 15px 0px  ;
+
+.form-control {
+
+    margin: 15px 0px;
+}
+
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0267aa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* @media only screen and (max-width:547px) {
+    .box1 {
+        background-color: black;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+} */
+
+/* @media screen and (orientation:portrait) {
+    body{
+        border:2px solid purple;
+    }
+} */
+/* .boxes{
+    display: flex;
+}
+.box {
+    width: 344px;
+    height: 344px;
+    background-color: steelblue;
+    padding: 3px;
+    margin: 3px;
+} */
+/* /******FOR MOBILE USER***********\ */
+.box11 {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #233859;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links .active, 
+.nav-links .request-rate {
+    background-color: rgb(231, 231, 84);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #233859;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

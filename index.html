@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truck Press Logistics</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
     <div class="box1">
         <div class="container">
             <div class="row">
@@ -19,14 +23,12 @@
                         <li> Theme Documentation </li>
                         <li>Buy Now </li>
                         <li>Promo</li>
-                        <li>50% off this month </li>
+                        <!-- <li>50% off this month </li> -->
                     </ul>
                 </div>
-
-
                 <div class="col-md-7">
                     <ul class="contact_top">
-                        <li><i class="watch" ></i>Mon-Sat : 09:00-20:00 </li>
+                        <li><i class="watch"></i>Mon-Sat : 09:00-20:00 </li>
                         <li><i class="fa fa-phone"></i> 011-25652565 </li>
                         <li><i class="fa fa-envelope"></i> transport@.com</li>
                         <li><i class="fa fa-instagram"></i></li>
@@ -34,148 +36,144 @@
                         <li><i class="fa fa-twitter"></i></li>
                         <li><i class="fa fa-wordpress"></i></li>
                     </ul>
-
                 </div>
             </div>
-  
         </div>
     </div>
-    </div>
+    
+
     <!-- <br> -->
     <div class="box11">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <ul class="contact_top">
-                        <li> <img src="pics/logo.PNG" class="img-fluid" alt=""> </li>
-                    </ul>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="pics/logo.PNG" alt="Logo">
                 </div>
-                
-                <div class="col-md-7" >
-                    <ul class="contact_top">
-                        <a href="https://themeforest.net/item/truck-press-logistics-transport-business-psd-template/13648696"
-                            target="_blank">
-                            <li style="background-color: rgb(231, 231, 84);">Home </li>
-                        </a>
-                        <a href="">
-                            <li>Location </li>
-                        </a>
-                        <a href="">
-                            <li>Our Services</li>
-                        </a>
-                        <a href="">
-                            <li>About Us</li>
-                        </a>
-                        <a href="">
-                            <li>Contact</li>
-                        </a>
-                        <a href="">
-                            <li>News</li>
-                        </a>
-                        <li><i class="fa fa-search"></i></li>
-                        <li style="background-color: rgb(231, 231, 84);">Request a Rate <i class="fa fa-check"></i></li>
-                    </ul>
-
-                </div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links">
+                    <label for="home"><li><a href="https://themeforest.net/item/truck-press-logistics-transport-business-psd-template/13648696"
+                            target="_blank" class="active">Home</a></li></label>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><i class="fa fa-search"></i></li>
+                    <li><a href="#" class="request-rate">Request a Rate <i class="fa fa-check"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <br>
 
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="slide 1.jpg" class="d-block w-100" alt="...">
+                <img src="pics/slide 1.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="slide 2.jpg" class="d-block w-100" alt="...">
+                <img src="pics/slide 2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="slide 3.jpg" class="d-block w-100" alt="...">
+                <img src="pics/slide 3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-
-
-
-
+    
     <div class="box3">
-
+        <div class="col-md-4"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <img src="pics/warehouse.png" class="img-fluid">
-                    <h4>PACKAGING AND STORAGE </h4><br>
-                    PACKING IS ONE OF THE MAIN FACTORS OF LOGISTICS WHICH RELATED TO LOGISTICS.
+                    <h6>PACKAGING AND STORAGE </h6><br>
+                    <p>Packaging is one of the main factors of logistics whicj related to logistics.</p>
                 </div>
                 <div class="col-md-3">
                     <img src="pics/web.png" class="img-fluid">
-
-                    <h4>WORLDWIDE TRANSPORT </h4><br>
-                    OPTIMAL PACKAGING OF PRODUCT IS A CRITICALLY IMPORTANT FACTORS IN LOGISTICS.
+                    <h6>WORLDWIDE TRANSPORT </h6><br>
+                    <p>Optimal packaging of product is a critically important factors logistics.</p>
                 </div>
                 <div class="col-md-3">
                     <img src="pics/delivery.png" class="img-fluid">
-                    <h4>DOOR TO DOOR DELIVERY </h4><br>
-                    TRANSPORTATION MODULES CARRY CARGO OUT FROM ONE COUNTRY VIA SEA.
+                    <h6>DOOR TO DOOR DELIVERY </h6><br>
+                    <p>Transportation modules carry cargo out from one country via sea.</p>
                 </div>
-
                 <div class="col-md-3">
                     <img src="pics/road.png" class="img-fluid">
-                    <h4>GROUND TRANSPORTATION </h4><br>
-                    TRANSPORTATION MODULES CARRY CARGO OUT FROM ONE COUNTRY VIA SEA.
+                    <h6>GROUND TRANSPORTATION </h6><br>
+                    <p>Transportation modules carry cargo out from one country via sea.</p>
+                    
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="head1">
         <h2>VALUABLE WORDS FROM CLIENTS</h2>
     </div>
-
-
     <div class="box4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas incidunt repellat impedit delectus
-                    cupiditate saepe illo, corporis nemo quia atque qui iste quasi ab? Quis quo nam modi voluptates sed.
+                    cupiditate saepe illo, corporis nemo quia atque qui iste quasi ab? Quis quo nam modi debitis earum aspernatur <br><br>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
                     <img src="pics/pic 4.jpg" alt="" class="img-fluid">
                     <p>CHRIS ROGER </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" >
+                    
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut delectus eligendi libero dolorum alias
                     voluptate expedita ea officiis fugiat aperiam debitis earum aspernatur, eius optio officia, eaque in
-                    repellat itaque.
+                    repellat itaque. <br><br>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
                     <img src="pics/pic 2.jpg" alt="" class="img-fluid">
                     <p>PETER DAVID NILSON</p>
                 </div>
                 <div class="col-md-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut delectus eligendi libero dolorum alias
                     voluptate expedita ea officiis fugiat aperiam debitis earum aspernatur, eius optio officia, eaque in
-                    repellat itaque.
+                    repellat itaque. <br><br>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
                     <img src="pics/pic 3.jpg" alt="" class="img-fluid">
                     <P>PHILLIPS ADAMS</P>
-                </div>
-
+                    
+                 </div>
+            </div>
+            <div class="box4circle">
+                <p>
+                    <i class="fa fa-circle-o"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle-o"></i>
+                </p>
             </div>
         </div>
     </div>
-
-
     <div class="box5">
         <div class="container">
             <div class="row">
@@ -196,7 +194,7 @@
                         <div class="col-md-2 ">
                             <img src="pics/ship.png" alt="" class="img-fluid">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" >
                             <h5>Sea Freight</h5>
                             <p> Sea Freight is one of the transporation.</p>
                         </div>
@@ -209,7 +207,6 @@
                             <h5>Road Freight </h5>
                             <p>Road Freight is one of the transporation.</p>
                         </div>
-
                         <div class="col-md-2">
                             <img src="pics/ware.png" alt="" class="img-fluid">
                         </div>
@@ -221,47 +218,39 @@
                 </div>
                 <div class="col-md-6">
                     <h3>REQUEST A QUICK NOTE </h3>
-
                     <form>
                         <div>
                             <input class="form-control" placeholder="Enter Your Name">
-
-
-
                             <input class="form-control" placeholder="Enter Your Email">
-
-
-
                             <input class="form-control" placeholder="Warehousing">
-
-
-
                             <input class="form-control" placeholder="Message">
-
-
                             <button class="form2bt"> Send Message</button>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="box6">
+
+    <div class="box6">  
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5" id="div6">
-                    <h5>FOR ANY HELP OR QUARIES </h5>
+                    
+                    <h4 > <p class="fa fa-phone"></p>FOR ANY HELP OR <br>
+                        QUERIES </h4>
                 </div>
-                <div class="col-md-3" id="div61">
-                    <h5>CALL US NOW 011-25652565</h5>
+                <div class="col-md-7" id="div61">
+                    <h5>CALL US NOW  011-25652565</h5>
+                    <button type="submit">Contact Us</button>
                 </div>
-                <div class="col-md-4" id="div61"><button type="submit">Contact Us</button></div>
+                <!-- <div class="col-md-4" id="div61"><button type="submit">Contact Us</button></div> -->
             </div>
         </div>
     </div>
+
+
 
     <div class="box7">
         <div class="container">
@@ -286,15 +275,12 @@
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores commodi
                                 distinctio, aliquid ipsum ullam ut sunt hic fugiat ab.
                             </p>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
     <div class="box8">
         <div class="container">
             <div class="row">
@@ -321,11 +307,9 @@
             </div>
         </div>
     </div>
-
-    <div style="margin: 50px 0px 0px 110px;">
+    <div style="margin: 50px 0px 0px 110px; font-weight: bolder;">
         <h4>LATEST NEWS </h4>
     </div>
-
     <div class="box9">
         <div class="container">
             <div class="row">
@@ -338,6 +322,12 @@
                         Magni voluptas quod voluptatibus commodi, suscipit est labore harum quam repellendus, dolores
                         natus similique cupiditate eum.
                     </p>
+                    <p>Share:
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </p>
                 </div>
                 <div class="col-md-6">
                     <h5>Experts,Delivery</h5>
@@ -348,14 +338,19 @@
                         Magni voluptas quod voluptatibus commodi, suscipit est labore harum quam repellendus, dolores
                         natus similique cupiditate eum.
                     </p>
+                    <p>Share:
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="box10heading">TRACK YOUR SHIPMENTS</div>
     <div class="box10">
         <div class="container">
-
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
@@ -363,48 +358,29 @@
                             <h5>By Shipment Numbers</h5>
                         </div>
                     </div>
-                    <p>To track the multiple shipments around the world.</p>
-                    <textarea name="" id="" cols="70" rows="8"></textarea><br>
+                    
+                    <textarea name="" placeholder="To track multiple shipments in the world enter the shipment number. " id="" cols="70" rows="8"></textarea><br>
                     <button>Track Now</button>
-
-
                 </div>
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-12" id="boxblue" style="margin-left: 10px;">
                             <h5>By Reference</h5>
                         </div>
-
                         <form>
                             <div>
                                 <input class="form-control" placeholder="Shipper Reference ">
-
-
-
                                 <input class="form-control" placeholder="Origin country ">
-
-
-
                                 <input class="form-control" placeholder="Warehousing">
-
-
-
                                 <input class="form-control" placeholder="Message">
-
-
-
+                                <button>Track Now</button>
                             </div>
-
                         </form>
-
-
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
     <div class="box12">
         <div class="container">
             <div class="row">
@@ -419,31 +395,46 @@
                 <div class="col-md-2">
                     <h5>SERVICES</h5>
                     <ul class="link">
-                        <li>All Services</li>
-                        <li>Air Freight </li>
-                        <li>Ocean Freight</li>
-                        <li>Road Rail</li>
-                        <li>Warehouse</li>
+                        <li><i class="fa fa-check-square"></i>
+                            All Services</li>
+                        <li><i class="fa fa-check-square"></i>
+                            Air Freight </li>
+                        <li><i class="fa fa-check-square"></i>
+                            Ocean Freight</li>
+                        <li><i class="fa fa-check-square"></i>
+                            Road Rail</li>
+                        <li><i class="fa fa-check-square"></i>
+                            Warehouse</li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <h5>USEFUL LINK</h5>
                     <ul class="link">
-                        <li>Tracking</li>
-                        <li>FAQ </li>
-                        <li>Company</li>
-                        <li>History</li>
-                        <li>Contact Us </li>
+                        <li><i class="fa fa-check-square"></i>
+                            Tracking</li>
+                        <li><i class="fa fa-check-square"></i>
+                            FAQ </li>
+                        <li><i class="fa fa-check-square"></i>
+                            Company</li>
+                        <li><i class="fa fa-check-square"></i>
+                            History</li>
+                        <li><i class="fa fa-check-square"></i>
+                            Contact Us </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h5>CONTACT</h5>
-                    <ul class="link">
-                        <li>TP Limited Headquarters</li>
-                        <li>Phone- 011-25652565 </li>
-                        <li>Email- Truscksinfo.com</li>
-                        <li>Website- Trucks.com</li>
-                        <li>Facebook- Truckpress </li>
+                    <ul class="link2">
+                        <li><i class="fa fa-map-marker"></i>
+                            TP Limited Headquarters</li>
+                        <li><i class="fa fa-phone"></i>
+                            Phone- 011-25652565 </li>
+                        <li><i class="fa fa-envelope"></i>
+                            Email- Truscksinfo.com</li>
+                        <li><i class="fa fa-truck"></i>
+                            Website- Trucks.com</li>
+                        <li><i class="fa fa-facebook"></i>
+                            Facebook- Truckpress </li>
                     </ul>
                 </div>
             </div>
@@ -453,14 +444,39 @@
 
     <div class="copyright">
         <div class="container">
-            <p class="text-center">Created By Krishna </p>
+            <p class="text-center">Created By Jrinfotech <i class="fa fa-cc"> </i> 2025 All rights reserved </p>
 
         </div>
 
 
     </div>
+    <!-- <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>www
+        <div class="box"></div>
+    </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // window.addEventListener("load", function () {
+        //     setTimeout(function () {
+        //         document.getElementById("preloader").style.display = "none";
+        //     }, 1000);
+        // });
+        // window.addEventListener("load",function(){
+        //     setTimeout(function(){
+        //         documnet.getElementById("preloader").style.display="none";
+        //     },1500);
+        // });
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("preloader").style.display = "none";
+            }, 1500);
+        });
+
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
 
 
 </body>
